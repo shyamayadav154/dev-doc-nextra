@@ -24,18 +24,18 @@ Github open source nextjs repos and their testing tools used on per page bases:
 width="1385"
 src="https://i.imgur.com/sFJgOOF.png"
 alt="Star counts" 
-/> Looking on
-to the star counts, we can see that Playwright has gained more popularity than
-Cypress. Since it's release in 2019.
+/>
+Looking on to the star counts, we can see that Playwright has gained more
+popularity than Cypress. Since it's release in 2019.
 
 #### NPM Downloads
 
 <img
 width="1385"
 src="https://i.imgur.com/1uUKktq.png" alt="npm downloads" 
-/>
-But on the other hand, Cypress has more downloads than Playwright. Which means
-it has bigger community then Playwright.
+/> But
+on the other hand, Cypress has more downloads than Playwright. Which means it
+has bigger community then Playwright.
 
 ### Features
 
@@ -110,5 +110,9 @@ execution, and real-time reloading during test development.
 
 ## Why Playwright
 
-Both of the testing tools provide almost the same functionality but in parallel
-execution Playwright is faster than Cypress.
+1. Parallel execution time of a playwright is faster than cypress.
+2. Browser support is better than cypress. Playwright supports all chromium
+   based browsers(chrome), firefox and webkit(safari), while cypress only
+   supports chromium and Edge
+3. Running parallel tests in cypress is complicated. While in
+   playwright it is easy and reliable.
