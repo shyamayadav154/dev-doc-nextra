@@ -22,13 +22,13 @@ using Cypress or Playwright.
 
 #### Github star counts since released
 
-<a href="https://imgur.com/sFJgOOF"><img src="https://i.imgur.com/sFJgOOF.png" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/sFJgOOF.png" title="source: imgur.com" />
 Looking on to the star counts, we can see that Playwright has gained more
 popularity than Cypress. Since it's release in 2019.
 
 #### NPM Downloads
 
-<a href="https://imgur.com/1uUKktq"><img src="https://i.imgur.com/1uUKktq.png" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/1uUKktq.png" title="source: imgur.com" />
 But on the other hand, Cypress has more downloads than Playwright. Which means
 it has bigger community then Playwright.
 
