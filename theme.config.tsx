@@ -4,13 +4,13 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 const config: DocsThemeConfig = {
     logo: <span style={{ fontWeight: "bold" }}>DevDocs</span>,
     project: {
-        link: "https://github.com/shuding/nextra-docs-template",
+        link: "https://github.com/shyamayadav154/dev-doc-nextra",
     },
     // chat: {
     //   link: "https://app.slack.com/client/T03AEL3M55J/C03AV8U5RUH",
     //   icon: <SlackIcon />,
     // },
-    docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+    docsRepositoryBase: "https://github.com/shyamayadav154/dev-doc-nextra",
     footer: {
         text: "DevDocs ",
     },
