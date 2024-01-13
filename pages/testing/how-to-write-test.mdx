@@ -1,6 +1,7 @@
 
 
 
+import { Callout } from 'nextra/components'
 
 ## How to Write End-to-End Tests using playwright
 
@@ -77,8 +78,10 @@ This will create a `test-1.spec.js` file as well as open up a browser window.
   src="https://user-images.githubusercontent.com/13063165/220961665-615d0ab8-3f0b-439c-ad0b-0424d9aa154b.png"
 />
 
-  Caveats: It doesn't directly open the localhost url, so you have to manually
+<Callout type="info" emoji="ℹ️">
+  Caveats: It doesn't directly open the localhost url, you have to manually
   type the localhost url in the browser.
+</Callout>
 
 In the browser go to the URL you wish to test and start clicking around to
 record your user actions.
@@ -109,10 +112,12 @@ browser window where you interact with the website you wish to test and the
 Playwright Inspector window where you can record your tests and then copy them
 into your editor.
 
+<Callout type="warning" emoji="⚠️">
   Make sure that dev/prod server is running before running the codegen command.
+</Callout>
 
 ```bash filename="codegen command"
- npm run e2e:gen
+npm run e2e:gen
 ```
 
 ### Recording a test
