@@ -1,5 +1,6 @@
 {
   "index": "Introduction",
+  "setup": "Dev setup",
   "testing": "E2E Testing ",
   "about": {
     "title": "About",

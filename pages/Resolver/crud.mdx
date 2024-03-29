@@ -1,0 +1,70 @@
+## Resolver CRUD
+
+jsdoc syntax to add at the top of the file below imports
+```jsdoc
+/** @typedef { import('@prisma_internals/company').PrismaClient } Prisma */
+```
+
+```js filename="create.js"
+/** @param {{ prisma: Prisma}} context */
+export async function create(parent, args, context, info) {
+  const select = common_utils.getSelection( info, info.fieldNodes[0].selectionSet);
+
+
+  /** @type { import('@prisma_internals/company').Prisma.<Model>CreateInput} */
+  const data = {}
+
+  /** @type { import('@prisma_internals/company').Prisma.<Model>WhereUniqueInput }*/
+  const where = { }
+
+  return context.prisma.<modelName>.create({
+    data: data,
+    select,
+  });
+}
+```
+
+
+```js filename="update"
+/** @param {{ prisma: Prisma}} context */
+export async function update(parent, args, context, info) {
+  const select = common_utils.getSelection( info, info.fieldNodes[0].selectionSet);
+
+/** @type { import('@prisma_internals/company').Prisma.<Model>UpdateInput } */
+    const data = { }
+
+  /** @type { import('@prisma_internals/company').Prisma.<Model>WhereUniqueInput }*/
+  const where = { }
+
+  return context.prisma.<modelName>.update({
+    where: {/** */},
+    data: data,
+    select,
+  });
+}
+```
+
+
+```js filename="read.js"
+/** @param {{ prisma: Prisma}} context */
+export async function read(parent, args, context, info) {
+  const select = common_utils.getSelection( info, info.fieldNodes[0].selectionSet);
+
+  return context.prisma.<modelName>.findMany({
+    where: {/** */},
+    select,
+  });
+}
+
+
+/** @param {{ prisma: Prisma}} context */
+export async function readOne(parent, args, context, info) {
+  const select = common_utils.getSelection( info, info.fieldNodes[0].selectionSet);
+
+  return context.prisma.<modelName>.findUnique({
+    where: {/** */},
+    select,
+  });
+}
+```
+
