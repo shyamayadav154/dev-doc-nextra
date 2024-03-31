@@ -16,6 +16,11 @@
   "bugs": {
     "url": "https://github.com/shuding/nextra-docs-template/issues"
   },
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "@vercel/analytics": "^1.1.2",

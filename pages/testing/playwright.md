@@ -1,10 +1,14 @@
 # E2E Testing
 
+## Problem statement
+
+Find the best E2E testing tool fort the applications.
+
 ## Tools used by industry
 
 After reviewing the github open source repo. We found out that most of them were
 using Cypress or Playwright.
-(https://github.com/search?q=nextjs&type=repositories&s=stars&o=desc)
+(<https://github.com/search?q=nextjs&type=repositories&s=stars&o=desc>)
 
 Github open source nextjs repos and their testing tools used on per page bases:
 
@@ -23,7 +27,7 @@ Github open source nextjs repos and their testing tools used on per page bases:
 <img
 width="1385"
 src="https://i.imgur.com/sFJgOOF.png"
-alt="Star counts" 
+alt="Star counts"
 />
 Looking on to the star counts, we can see that Playwright has gained more
 popularity than Cypress. Since it's release in 2019.
@@ -32,7 +36,7 @@ popularity than Cypress. Since it's release in 2019.
 
 <img
 width="1385"
-src="https://i.imgur.com/1uUKktq.png" alt="npm downloads" 
+src="https://i.imgur.com/1uUKktq.png" alt="npm downloads"
 /> But
 on the other hand, Cypress has more downloads than Playwright. Which means it
 has bigger community then Playwright.
@@ -86,7 +90,7 @@ has bigger community then Playwright.
      community.
 
 7. Code Generation:
-   - Playwright: Provides code generation for tests, using the Playright CLI or
+   - Playwright: Provides code generation for tests, using the Playwright CLI or
      via VS Code extension.
    - Cypress: Provides code generation for tests, using the Cypress CLI under
      the experimentalStudio flag. Does not have a VS Code extension.

@@ -1,9 +1,12 @@
 ## Resolver CRUD
 
-jsdoc syntax to add at the top of the file below imports
-```jsdoc
+put below line in the top of the resolver file
+
+```js
 /** @typedef { import('@prisma_internals/company').PrismaClient } Prisma */
 ```
+
+Create
 
 ```js filename="create.js"
 /** @param {{ prisma: Prisma}} context */
@@ -24,6 +27,7 @@ export async function create(parent, args, context, info) {
 }
 ```
 
+Update
 
 ```js filename="update"
 /** @param {{ prisma: Prisma}} context */
@@ -44,6 +48,7 @@ export async function update(parent, args, context, info) {
 }
 ```
 
+Read
 
 ```js filename="read.js"
 /** @param {{ prisma: Prisma}} context */
@@ -68,3 +73,17 @@ export async function readOne(parent, args, context, info) {
 }
 ```
 
+Delete
+
+```js
+/** @param {{ prisma: Prisma}} context */
+
+export async function delete(parent, args, context, info) {
+  const select = common_utils.getSelection( info, info.fieldNodes[0].selectionSet);
+
+  return context.prisma.<modelName>.delete({
+    where: {/** */},
+    select,
+  });
+}
+```
