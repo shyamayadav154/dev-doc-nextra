@@ -6,6 +6,10 @@ const config: DocsThemeConfig = {
     project: {
         link: "https://github.com/shyamayadav154/dev-doc-nextra",
     },
+    sidebar:{
+        toggleButton:true,
+        autoCollapse:true
+    },
     // chat: {
     //   link: "https://app.slack.com/client/T03AEL3M55J/C03AV8U5RUH",
     //   icon: <SlackIcon />,
